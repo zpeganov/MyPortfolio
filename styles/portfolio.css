@@ -1,0 +1,46 @@
+body{
+    background-color: #E2F1F6;
+    color: rgb(54, 54, 54);
+    font-family: Arial;
+    font-size: 20px;
+    margin: 0;
+}
+
+.portfolio-container{
+    /* background-color: rgb(141, 118, 242); */
+    height: 750px;
+    width: 800px;
+    margin: auto;
+    margin-top: 150px;
+}
+.portfolio-title{
+    text-align: left;
+    padding: 30px 35px;
+    font-size: 38px;
+}
+
+.portfolio-section{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    font-size: 30px;
+    text-align: right;
+    margin: 50px 40px;
+    padding: 40px 30px;
+    border: solid 2px rgb(54, 54, 54);
+    cursor: pointer;
+    transition: box-shadow 0.15s ease;
+}
+ .portfolio-section:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+ }
+
+.portfolio-contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.portfolio-contacts img{
+    cursor: pointer;
+}
