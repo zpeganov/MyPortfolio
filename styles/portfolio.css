@@ -1,41 +1,64 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Gyahegi.otf');
+}
 body{
     background-color: #E2F1F6;
     color: rgb(54, 54, 54);
-    font-family: Arial;
+    font-family: Roboto, Arial;
     font-size: 20px;
     margin: 0;
 }
 
 .portfolio-container{
-    /* background-color: rgb(141, 118, 242); */
+    /*background-color: rgb(141, 118, 242);*/
     height: 750px;
     width: 800px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 150px;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 .portfolio-title{
+    font-family: 'CustomFont', Arial;
     text-align: left;
     padding: 30px 35px;
-    font-size: 38px;
+    font-size: 34px;
 }
 
 .portfolio-section{
+    font-family: 'CustomFont', Arial;
     display: flex;
     justify-content: space-between;
     /* background-color: yellow; */
     font-size: 30px;
     text-align: right;
-    margin: 50px 40px;
-    padding: 40px 30px;
+    margin: 0px 40px;
+    padding: 32px 30px;
     border: solid 2px rgb(54, 54, 54);
     cursor: pointer;
     transition: box-shadow 0.15s ease;
 }
+.expand-section{
+    max-height: 0;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px 40px;
+    overflow: hidden;
+    line-height: 1.5;
+    transition: max-height 0.3s ease-out, transform 0.15s ease;
+}
+.expand-section.expanded{
+    max-height: 2000px;
+}
  .portfolio-section:hover{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); */
+    transform: translateY(-5px);
  }
 
 .portfolio-contacts{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,4 +66,33 @@ body{
 }
 .portfolio-contacts img{
     cursor: pointer;
+}
+
+.header-text{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.header-subtext{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -15px;
+    text-align: center;
+}
+.subtitle-text{
+    margin-bottom: 30px;
+}
+
+.project-image{
+    width: 800px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    
+}
+.project-image:hover{
+    transform: translateY(-20px);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.15);
 }
