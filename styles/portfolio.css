@@ -16,10 +16,11 @@ body{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: auto;
     overflow-y: scroll;
     scrollbar-width: none;
 }
+
 .portfolio-title{
     font-family: 'CustomFont', Arial;
     text-align: left;
@@ -30,7 +31,9 @@ body{
 .portfolio-section{
     font-family: 'CustomFont', Arial;
     display: flex;
+    height: 40px;
     justify-content: space-between;
+    align-items: center;
     /* background-color: yellow; */
     font-size: 30px;
     text-align: right;
@@ -40,6 +43,59 @@ body{
     cursor: pointer;
     transition: box-shadow 0.15s ease;
 }
+
+.about-me-section-container{
+    display: flex;
+    gap: 40px;
+}
+
+.about-me-section-container img{
+    height: 300px;
+    transition: transform 0.15s ease;
+    border-radius: 40px;
+}
+
+.about-me-section-container img:hover{
+    transform: translateY(-20px);}
+
+@media screen and (max-width: 800px) {
+    .portfolio-container {
+        width: 100%;
+        height: 550px;
+        font-size: 4px;
+    }
+
+    .header-text{
+        font-size: 12px;
+    }
+    .portfolio-section {
+        font-size: 20px;
+        padding: 20px 15px;
+        margin: 0px 20px;
+    }
+    .portfolio-section img{
+    }
+    .portfolio-title {
+        font-size: 20px;
+        padding: 32px 30px;
+    }
+    .about-me-section-container img{
+       height: 300px;
+       width: auto;
+       margin-bottom: 10px;
+    }
+    .expand-section div{
+        display: flex;
+        flex-direction: column;
+    }
+    .expand-section.expanded{
+        font-size: 16px;
+    }
+    .header{
+        height: 90px;
+    }
+}
+
 .expand-section{
     max-height: 0;
     font-size: 20px;
@@ -50,7 +106,7 @@ body{
     transition: max-height 0.3s ease-out, transform 0.15s ease;
 }
 .expand-section.expanded{
-    max-height: 2000px;
+    max-height: 10000px;
 }
  .portfolio-section:hover{
     /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); */
@@ -74,6 +130,10 @@ body{
     font-weight: 300;
 }
 
+#other-header{
+    margin-bottom: 5px;
+}
+
 .header-subtext{
     font-size: 20px;
     font-weight: 300;
@@ -95,4 +155,51 @@ body{
 .project-image:hover{
     transform: translateY(-20px);
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.header{
+    background-color: #E2F1F6;/*#e2f6ee;*/
+    font-family: CustomFont, Roboto;
+    font-weight: 300;
+    display: flex;
+    height: 110px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.header-left{
+    font-size: 20px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 70px;
+    
+}
+
+.typed-text{
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(17),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+/* .header-left h1{
+    font-size: 25px;
+} */
+.header-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.linked-hyperlink img, .github-hyperlink img{
+    cursor: pointer;
 }

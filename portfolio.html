@@ -6,8 +6,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div class="header">
+            <span class="typed-text"></span>
+        </div>
         <div class="portfolio-container">
             <div class="portfolio-title">
                WELCOME TO MY PORTFOLIO.
@@ -17,9 +21,14 @@
                 <text>About Me</text>
             </div>
             <div class="expand-section">
-                <div class="header-text">Hi, my name is Zach!</div>
-                <div>
-                I am an aspiring software developer with a passion for clean and intuitive design. Currently, I am a student at Eastern Washington University majoring in Computer Science with a focus on data science and machine learning. I enjoy working on projects that challenge me and allow me to encourage me to learn new skills.
+                <div class="header-text">Hi,</div>
+                <div class="about-me-section-container">
+                    <div>
+                        I'm Zach, a student majoring in Computer Science at Eastern Washington University. I have a passion for designing applications that are both visually attractive and functionally intuitive. I enjoy playing volleyball, photography, and learning about science through YouTube videos.
+                    </div>
+                    <div>
+                        <img src = "images/profile-photo.jpeg">
+                    </div>
                 </div>
             </div>
             <div class="portfolio-section">
@@ -47,15 +56,27 @@
                 <text>Technologies</text>
             </div>
              <div class="expand-section">
-                <div class="header-text">Tech Stack</div>
+                <div class="header-text" id = "other-header">
+                    Languages
+                </div>
                 <div>
-                Java, Python, HTML, CSS, JavaScript
+                Java, Python, HTML, CSS, JavaScript, C, ARM Assembly
+                </div>
+                 <div class="header-text" id = "other-header">
+                    Other
+                </div>
+                <div>
+                    Git, Figma, SQL
                 </div>
              </div>
         </div>
         <div class="portfolio-contacts">
+            <a href = "https://github.com/zpeganov" target="_blank" class = "github-hyperlink">
                 <img src = "icons/Github.svg">
+            </a>
+            <a href = "https://www.linkedin.com/in/zacharia-peganov" target="_blank" class = "linkedin-hyperlink">
                 <img src = "icons/LinkedIn.svg">
+            </a>
         </div>
         <script src="scripts/portfolio.js"></script>
     </body>
