@@ -2,7 +2,8 @@
     font-family: 'CustomFont';
     src: url('../fonts/Gyahegi.otf');
 }
-body{
+
+body {
     background-color: #E2F1F6;
     color: rgb(54, 54, 54);
     font-family: Roboto, Arial;
@@ -10,7 +11,7 @@ body{
     margin: 0;
 }
 
-.portfolio-container{
+.portfolio-container {
     /*background-color: rgb(141, 118, 242);*/
     height: 750px;
     width: 800px;
@@ -21,14 +22,14 @@ body{
     scrollbar-width: none;
 }
 
-.portfolio-title{
+.portfolio-title {
     font-family: 'CustomFont', Arial;
     text-align: left;
     padding: 30px 35px;
     font-size: 34px;
 }
 
-.portfolio-section{
+.portfolio-section {
     font-family: 'CustomFont', Arial;
     display: flex;
     height: 40px;
@@ -44,19 +45,21 @@ body{
     transition: box-shadow 0.15s ease;
 }
 
-.about-me-section-container{
+.about-me-section-container {
     display: flex;
     gap: 40px;
 }
 
-.about-me-section-container img{
-    height: 300px;
+.about-me-section-container img {
+    object-fit: contain;
+    height: 400px;
     transition: transform 0.15s ease;
     border-radius: 40px;
 }
 
-.about-me-section-container img:hover{
-    transform: translateY(-20px);}
+.about-me-section-container img:hover {
+    transform: translateY(-20px);
+}
 
 @media screen and (max-width: 800px) {
     .portfolio-container {
@@ -65,38 +68,44 @@ body{
         font-size: 4px;
     }
 
-    .header-text{
+    .header-text {
         font-size: 12px;
     }
+
     .portfolio-section {
         font-size: 20px;
         padding: 20px 15px;
         margin: 0px 20px;
     }
-    .portfolio-section img{
-    }
+
+    .portfolio-section img {}
+
     .portfolio-title {
         font-size: 20px;
         padding: 32px 30px;
     }
-    .about-me-section-container img{
-       height: 300px;
-       width: auto;
-       margin-bottom: 10px;
+
+    .about-me-section-container img {
+        height: 300px;
+        width: auto;
+        margin-bottom: 10px;
     }
-    .expand-section div{
+
+    .expand-section div {
         display: flex;
         flex-direction: column;
     }
-    .expand-section.expanded{
+
+    .expand-section.expanded {
         font-size: 16px;
     }
-    .header{
+
+    .header {
         height: 90px;
     }
 }
 
-.expand-section{
+.expand-section {
     max-height: 0;
     font-size: 20px;
     text-align: left;
@@ -105,60 +114,66 @@ body{
     line-height: 1.5;
     transition: max-height 0.3s ease-out, transform 0.15s ease;
 }
-.expand-section.expanded{
+
+.expand-section.expanded {
     max-height: 10000px;
 }
- .portfolio-section:hover{
+
+.portfolio-section:hover {
     /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); */
     transform: translateY(-5px);
- }
+}
 
-.portfolio-contacts{
+.portfolio-contacts {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
 }
-.portfolio-contacts img{
+
+.portfolio-contacts img {
     cursor: pointer;
 }
 
-.header-text{
+.header-text {
     margin-bottom: 20px;
     font-size: 30px;
     font-weight: 300;
 }
 
-#other-header{
+#other-header {
     margin-bottom: 5px;
 }
 
-.header-subtext{
+.header-subtext {
     font-size: 20px;
     font-weight: 300;
     margin-top: -15px;
     text-align: center;
 }
-.subtitle-text{
+
+.subtitle-text {
     margin-bottom: 30px;
 }
 
-.project-image{
+.project-image {
     width: 800px;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 50px;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
-    
+
 }
-.project-image:hover{
+
+.project-image:hover {
     transform: translateY(-20px);
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
-.header{
-    background-color: #E2F1F6;/*#e2f6ee;*/
+.header {
+    background-color: #E2F1F6;
+    /*#e2f6ee;*/
     font-family: CustomFont, Roboto;
     font-weight: 300;
     display: flex;
@@ -167,17 +182,18 @@ body{
     text-align: center;
     justify-content: center;
 }
-.header-left{
+
+.header-left {
     font-size: 20px;
     width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 70px;
-    
+
 }
 
-.typed-text{
+.typed-text {
     white-space: nowrap;
     overflow: hidden;
     animation:
@@ -186,13 +202,19 @@ body{
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
+
 /* .header-left h1{
     font-size: 25px;
 } */
-.header-right{
+.header-right {
     flex: 1;
     display: flex;
     align-items: center;
@@ -200,6 +222,12 @@ body{
     padding-right: 20px;
 }
 
-.linked-hyperlink img, .github-hyperlink img{
+.linked-hyperlink img,
+.github-hyperlink img {
     cursor: pointer;
+}
+
+.about-project {
+    text-align: left;
+    margin-bottom: 40px;
 }
