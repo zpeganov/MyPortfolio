@@ -49,12 +49,15 @@ body {
     display: flex;
     gap: 40px;
 }
+.about-me-section-container div {
+    width: 300px;
+}
 
 .about-me-section-container img {
     object-fit: contain;
     height: 400px;
     transition: transform 0.15s ease;
-    border-radius: 40px;
+    border-radius: 80px;
 }
 
 .about-me-section-container img:hover {
